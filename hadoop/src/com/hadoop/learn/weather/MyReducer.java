@@ -16,7 +16,7 @@ public class MyReducer extends Reducer<Weather, IntWritable, Text, IntWritable> 
             if (i++ == 2) {
                 break;
             }
-            String val = key.getYear()+"-"+key.getMonth()+"-"+key.getDay()+":"+t.get();
+            String val = key.getYear()+"-"+key.getMonth()+"-"+key.getDay();
             context.write(new Text(val), t);
         }
 

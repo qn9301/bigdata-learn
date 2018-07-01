@@ -17,7 +17,7 @@ public class MyMapper extends Mapper<LongWritable, Text, Weather, IntWritable> {
     @Override
     protected void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         Calendar c = Calendar.getInstance();
 
         String line = value.toString();
