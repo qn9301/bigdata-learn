@@ -32,7 +32,7 @@ public class MyMapper extends Mapper<LongWritable, Text, Weather, IntWritable> {
                 w.setYear(c.get(Calendar.YEAR));
                 w.setMonth(c.get(Calendar.MONTH) + 1);
                 w.setDay(c.get(Calendar.DATE));
-                int t = Integer.parseInt(temp.substring(0, 2));
+                int t = Integer.parseInt(temp.substring(0, temp.toString().lastIndexOf("c")));
                 w.setTemperature(t);
                 context.write(w, new IntWritable(t));
             } catch (ParseException e) {

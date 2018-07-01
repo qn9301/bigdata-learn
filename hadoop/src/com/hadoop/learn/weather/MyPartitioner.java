@@ -1,6 +1,5 @@
 package com.hadoop.learn.weather;
 
-import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
 
