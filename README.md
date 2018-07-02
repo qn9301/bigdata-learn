@@ -13,7 +13,9 @@
 ##### 1. 搭建 4台Centos7，下载的是min版本的`CentOS-7-x86_64-Minimal-1804.iso`
 ##### 2. 分配静态ip
 Centos7中查看ip的命令为`ip a`
+
 ![这里写图片描述](https://img-blog.csdn.net/20180628184903386?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMxMzQzNTgx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 编辑文件 `/etc/sysconfig/network-scripts/ifcfg-ens33`
 参照https://blog.csdn.net/qq_31343581/article/details/80833912
 ##### 3. 关闭防火墙和SeLinux
